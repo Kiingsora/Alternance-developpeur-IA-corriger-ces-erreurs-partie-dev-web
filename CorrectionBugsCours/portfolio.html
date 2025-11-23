@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Portfolio - Robbie Lens Photographie</title>
@@ -48,8 +49,8 @@
         
                     var div = document.createElement('div'); 
                     div.className = "photo-hover"
-                    var content = "Voir la photo"
-                    div.innerHTML = content;
+                    var content = document.createTextNode("Voir la photo")
+                    div.appendChild(content)
                     link.appendChild(div)
         
                     return link
