@@ -67,13 +67,18 @@
         </main> 
         <script>
             function sendMail() {
+                console.log("la fonction est lancée");
+                
                 var phone = document.getElementById('telephone')
                 var mail = document.getElementById('email')
                 var message = document.getElementById('message')
     
                 if (message.value !== '') {
+                    console.log("il y a du texte dans message");
+                    
                     if (phone.value !== '' && mail.value !== '') {
-                        console.log("Send mail")
+                        console.log("il y a du texte dans ");
+                        console.log("Send mail");
                     }
                 }
             }
